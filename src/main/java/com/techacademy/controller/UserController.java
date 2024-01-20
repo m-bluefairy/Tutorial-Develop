@@ -19,6 +19,7 @@ import com.techacademy.service.UserService;
 @Controller
 @RequestMapping("user")
 public class UserController {
+   
     private final UserService service;
 
     public UserController(UserService service) {
