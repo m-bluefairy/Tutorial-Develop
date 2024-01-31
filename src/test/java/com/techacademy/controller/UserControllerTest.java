@@ -47,7 +47,7 @@ class UserControllerTest {
     @WithMockUser
     void testGetUser() throws Exception {
         // HTTPリクエストに対するレスポンスの検証
-        MvcResult result = mockMvc.perform(get("/user/update/1/","/user/update/2/","/user/update/3/") // URLにアクセス
+        MvcResult result = mockMvc.perform(get("/user/update/1/","/user/update/2/","/user/update/3/")) // URLにアクセス
             .andExpect(status().isOk()) // ステータスを確認
             .andExpect(model().attributeExists("userlist")) // Modelの内容を確認
             .andExpect(model().hasNoErrors()) // Modelのエラー有無の確認
